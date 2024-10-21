@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 99vw;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur et voluptatibus iste
+            vitae tempora cumque corporis placeat incidunt soluta numquam? Nostrum earum amet quibusdam excepturi
+            accusamus blanditiis et eligendi magni?</p>
+        <table>
+            <tr>
+                <th>fontFamily</th>
+                <th>textAlign</th>
+                <th>lineHeigth</th>
+                <th>letterSpacing</th>
+                <th>textIndent</th>
+                <th>textTransform</th>
+                <th>textDecoration</th>
+                <th>textBorder</th>
+                <th>borderColor</th>
+            </tr>
+            <tr>
+                <td>
+                    <label><input type="radio" name="fontFamily" value="arial" onclick="fontFamily()"> arial</label><br>
+                    <label><input type="radio" name="fontFamily" value="courier" onclick="fontFamily()">
+                        courier</label><br>
+                    <label><input type="radio" name="fontFamily" value="georgia" onclick="fontFamily()">
+                        georgia</label><br>
+                    <label><input type="radio" name="fontFamily" value="impact" onclick="fontFamily()">
+                        impact</label><br>
+                    <label><input type="radio" name="fontFamily" value="Times New Roman" onclick="fontFamily()"> times new
+                        roman</label><br>
+                    <label><input type="radio" name="fontFamily" value="verdana" onclick="fontFamily()">
+                        verdana</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="textAlign" value="left" onclick="textAlign()"> left</label><br>
+                    <label><input type="radio" name="textAlign" value="center" onclick="textAlign()">
+                        center</label><br>
+                    <label><input type="radio" name="textAlign" value="right" onclick="textAlign()">
+                        right</label><br>
+                    <label><input type="radio" name="textAlign" value="justify" onclick="textAlign()">
+                        justify</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="lineHeigth" value="normal" onclick="lineHeigth()">
+                        normal</label><br>
+                    <label><input type="radio" name="lineHeigth" value="10px" onclick="lineHeigth()">
+                        10px</label><br>
+                    <label><input type="radio" name="lineHeigth" value="15px" onclick="lineHeigth()">
+                        15px</label><br>
+                    <label><input type="radio" name="lineHeigth" value="1.5" onclick="lineHeigth()">
+                        1.5</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="letterSpacing" value="normal" onclick="letterSpacing()">
+                        normal</label><br>
+                    <label><input type="radio" name="letterSpacing" value="-1px" onclick="letterSpacing()">
+                        -1px</label><br>
+                    <label><input type="radio" name="letterSpacing" value="2px" onclick="letterSpacing()">
+                        2px</label><br>
+                    <label><input type="radio" name="letterSpacing" value="3px" onclick="letterSpacing()">
+                        3px</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="textIndent" value="0px" onclick="textIndent()">
+                        0px</label><br>
+                    <label><input type="radio" name="textIndent" value="5px" onclick="textIndent()">
+                        5px</label><br>
+                    <label><input type="radio" name="textIndent" value="15px" onclick="textIndent()">
+                        15px</label><br>
+                    <label><input type="radio" name="textIndent" value="25px" onclick="textIndent()">
+                        25px</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="textTransform" value="none" onclick="textTransform()">
+                        none</label><br>
+                    <label><input type="radio" name="textTransform" value="capitalize" onclick="textTransform()">
+                        capitalize</label><br>
+                    <label><input type="radio" name="textTransform" value="uppercase" onclick="textTransform()">
+                        uppercase</label><br>
+                    <label><input type="radio" name="textTransform" value="lowercase" onclick="textTransform()">
+                        lowercase</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="textDecoration" value="none" onclick="textDecoration()">
+                        none</label><br>
+                    <label><input type="radio" name="textDecoration" value="line-through" onclick="textDecoration()">
+                        line-through</label><br>
+                    <label><input type="radio" name="textDecoration" value="overline" onclick="textDecoration()">
+                        overline</label><br>
+                    <label><input type="radio" name="textDecoration" value="underline" onclick="textDecoration()">
+                        underline</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="textBorder" value="none" onclick="textBorder()">
+                        none</label><br>
+                    <label><input type="radio" name="textBorder" value="dotted" onclick="textBorder()">
+                        dotted</label><br>
+                    <label><input type="radio" name="textBorder" value="double" onclick="textBorder()">
+                        double</label><br>
+                    <label><input type="radio" name="textBorder" value="groove" onclick="textBorder()">
+                        groove</label><br>
+                    <label><input type="radio" name="textBorder" value="dashed" onclick="textBorder()">
+                        dashed</label><br>
+                    <label><input type="radio" name="textBorder" value="inset" onclick="textBorder()">
+                        inset</label><br>
+                    <label><input type="radio" name="textBorder" value="solid" onclick="textBorder()">
+                        solid</label><br>
+                    <label><input type="radio" name="textBorder" value="outset" onclick="textBorder()">
+                        outset</label><br>
+                    <label><input type="radio" name="textBorder" value="ridge" onclick="textBorder()">
+                        ridge</label><br>
+                </td>
+                <td>
+                    <label><input type="radio" name="borderColor" value="none" onclick="borderColor()">
+                        none</label><br>
+                    <label><input type="radio" name="borderColor" value="pink" onclick="borderColor()">
+                        pink</label><br>
+                    <label><input type="radio" name="borderColor" value="red" onclick="borderColor()">
+                        red</label><br>
+                    <label><input type="radio" name="borderColor" value="green" onclick="borderColor()">
+                        green</label><br>
+                    <label><input type="radio" name="borderColor" value="blue" onclick="borderColor()">
+                        blue</label><br>
+                    <label><input type="radio" name="borderColor" value="yellow" onclick="borderColor()">
+                        yellow</label><br>
+                    <label><input type="radio" name="borderColor" value="purple" onclick="borderColor()">
+                        purple</label><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="textStyle.js"></script>
+</body>
+
+</html>
